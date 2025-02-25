@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    position: sticky;
+    height: 5rem;
+    line-height: 5rem;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.win {
+    color: green;
+    transform: scale(1.2);
+}
+
+.lose {
+    color: red;
+    transform: scale(1.2);
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #222;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.win-msg {
+    background-color: green !important;
+    transform: scale(1.1);
+}
+
+.lose-msg {
+    background-color: red !important;
+    transform: scale(1.1);
+}
+
+#reset-btn {
+    margin-top: 2rem;
+    position: fixed;
+    top: 50px;
+    left: 650px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
